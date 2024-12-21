@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listecim.com - İletişim</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/iletisim.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="index.html" class="logo">
+                <div class="fas fa-clipboard-list"></div>
+                Listecim.com
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkinda.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="todolist.php">TodoList</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- iletişim alanı -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-header">
+                    <h1 class="contact-title">Bizimle İletişime Geçin</h1>
+                    <p class="contact-subtitle">Sorularınız için buradayız. Size yardımcı olmaktan mutluluk duyarız.</p>
+                </div>
+
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt info-icon"></i>
+                        <h3 class="info-title">Adres</h3>
+                        <p class="info-text">İstanbul, Türkiye<br>34000</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone info-icon"></i>
+                        <h3 class="info-title">Telefon</h3>
+                        <p class="info-text">+90 (212) 123 45 67<br>+90 (532) 123 45 67</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope info-icon"></i>
+                        <h3 class="info-title">E-posta</h3>
+                        <p class="info-text">info@listecim.com<br>destek@listecim.com</p>
+                    </div>
+                </div>
+
+                <form action="./php/iletişim.php" method="post">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Adınız</label>
+                                <input name="ad" type="text" class="form-control" placeholder="Adınızı girin">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">E-posta</label>
+                                <input name="email" type="email" class="form-control" placeholder="E-posta adresinizi girin">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Konu</label>
+                        <input name="konu" type="text" class="form-control" placeholder="Mesajınızın konusu">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Mesajınız</label>
+                        <textarea name="mesaj" class="form-control" placeholder="Mesajınızı yazın..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Mesaj Gönder</button>
+                </form>
+
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- iletişim alanı -->
+
+    <!-- footer alanı -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Logo ve Açıklama -->
+                <div>
+                    <a href="index.html" class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-clipboard-list"></i>
+                        </div>
+                        <span>Listecim.com</span>
+                    </a>
+                    <p class="footer-text">Hayatınızı düzene sokmanın en kolay yolu. Görevlerinizi organize edin,
+                        hedeflerinize ulaşın.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- Hızlı Linkler -->
+                <div>
+                    <h3 class="footer-title">Hızlı Linkler</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Anasayfa</a></li>
+                        <li><a href="hakkinda.html">Hakkımızda</a></li>
+                        <li><a href="todolist.php">Todo List</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <!-- İletişim -->
+                <div>
+                    <h3 class="footer-title">İletişim</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:info@listecim.com"><i class="far fa-envelope me-2"></i>info@listecim.com</a>
+                        </li>
+                        <li><a href="tel:+902121234567"><i class="fas fa-phone me-2"></i>+90 212 123 45 67</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt me-2"></i>İstanbul, Türkiye</a></li>
+                    </ul>
+                </div>
+
+                <!-- Yasal -->
+                <div>
+                    <h3 class="footer-title">Yasal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Gizlilik Politikası</a></li>
+                        <li><a href="#">Kullanım Koşulları</a></li>
+                        <li><a href="#">Çerez Politikası</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Telif Hakkı -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Listecim.com - Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
